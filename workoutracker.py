@@ -17,7 +17,7 @@ class Workout(object):
         self.reps = reps
     def __str__(self):
         r = []
-        r.append(f'Exrecise: {self.exercise}')
+        r.append(f'Exercise: {self.exercise}')
         r.append(f'Weight: {self.weight} KG')
         r.append(f'Reps: {self.reps}')
         return '\n'.join(r)
@@ -29,9 +29,9 @@ while q != "N":
       ex = input("Exercise: ")
       f.write(ex + '\n')
       wght = input("Weight: ")
-      f.write(wght + "KG" +'\n')
+      f.write(wght + " KG" +'\n')
       rps = input("Reps: ")
-      f.write(rps + "reps" + '\n' + '\n')
+      f.write(rps + " reps" + '\n' + '\n')
       a.append(Workout(ex, wght, rps))
       q = input("Add an exercise? (Y/N) ")
 f.close()
