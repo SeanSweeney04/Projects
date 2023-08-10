@@ -1,5 +1,8 @@
 import requests
 
+# This is an improvement on the Bitcoin API
+# Simply type the price of the coin that you want, and it will retrieve the price for you
+
 base_url = "https://api.coingecko.com/api/v3/simple/price?ids="
 
 coin = input()
